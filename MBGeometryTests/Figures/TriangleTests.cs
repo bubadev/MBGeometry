@@ -31,6 +31,12 @@ namespace MBGeometry.Figures.Tests
             Assert.ThrowsException<ArgumentException>(() => new Triangle(triangle));
         }
         [TestMethod()]
+        public void NullSidesTest()
+        {
+            var triangle = new TriangleModel() {  };
+            Assert.ThrowsException<ArgumentException>(() => new Triangle(triangle));
+        }
+        [TestMethod()]
         public void InvalidSideLenghtTest()
         {
             var triangle = new TriangleModel() { Sides = new double[] { 30, 4, 5 } };

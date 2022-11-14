@@ -17,9 +17,6 @@ namespace MBGeometry.Figures
         {
             model.Validate();
 
-            if (model.Sides == null)
-                throw new ArgumentNullException();
-
             if (model.Sides.Any(x => x <= 0 || x > Double.MaxValue))
                 throw new ArgumentException("Side lenght must be at least 0 and at most double max value");
 
