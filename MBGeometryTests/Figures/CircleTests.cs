@@ -1,11 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using MBGeometry.Figures;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MBGeometry.Models;
+﻿using MBGeometry.Models;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace MBGeometry.Figures.Tests
 {
